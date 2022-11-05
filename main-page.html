@@ -12,7 +12,7 @@
     <div class="app-content">
         <nav> 
             <div> 
-                <a href=""><img src="Images/279.ico" alt="About me"></a>
+                <a href="javascript:void(0);" onclick="openWind('#window-grid-about-me', '#tab-about-me');"><img src="Images/279.ico" alt="About me"></a>
                 <p>About me</p>
             </div>
             <div> 
@@ -20,20 +20,21 @@
                 <p>My projects</p>
             </div>
             <div> 
-                <a href=""><img src="Images/img-twitter.png" alt="My Twitter"></a>
+                <a href="javascript:void(0);" onclick="openLink('#window-grid-my-twitter','#tab-my-twitter');"><img src="Images/img-twitter.png" alt="My Twitter"></a>
                 <p>My Twitter</p>
             </div>
             <div> 
-                <a href=""><img src="Images/img-github.png" alt="My GitHub"></a>
+                <a href="javascript:void(0);" onclick="openLink('#window-grid-my-github','#tab-my-github');"><img src="Images/img-github.png" alt="My GitHub"></a>
                 <p>My GitHub</p>
             </div>
             <div> 
-                <a href=""><img src="Images/img-linkdin.png" alt="My Linkdin"></a>
+                <a href="javascript:void(0);" onclick="openLink('#window-grid-my-linkdin','#tab-my-linkdin');"><img src="Images/img-linkdin.png" alt="My Linkdin"></a>
                 <p>My Linkdin</p>
             </div>
         </nav>
     </div>
     <footer>
+
         <div class="button-start">
             <div class="footer-start">
                 <img src="Images/w-xp-start.png" alt="Start">
@@ -42,8 +43,9 @@
                 <a href="javascript:void(0);" class="start" onclick="start();">Start</a>
             </div>
         </div>
+
         <div class="taskbar">
-            <div class="open-tab"> 
+            <div id="tab-about-me" class="open-tab"  onclick="openWind('#window-grid-about-me', '#tab-about-me');"> 
                 <a href="javascript:void(0);"><img src="Images/279.ico" alt="About Me"></a>
                 <p>About Me</p>
             </div>
@@ -51,44 +53,46 @@
                 <a href="javascript:void(0);" ><img src="Images/img-project.ico" alt="My Projects"></a>
                 <p>My Projects</p>
             </div>
-            <div class="open-tab"> 
+            <div id="tab-my-twitter" onclick="openLink('#window-grid-my-twitter','#tab-my-twitter');" class="open-tab"> 
                 <a href=""><img src="Images/img-twitter.png" alt="My Twitter"></a>
                 <p>My Twitter</p>
             </div>
-            <div class="open-tab"> 
+            <div id="tab-my-github" onclick="openLink('#window-grid-my-github','#tab-my-github');" class="open-tab"> 
                 <a href=""><img src="Images/img-github.png" alt="My GitHub"></a>
                 <p>My GitHub</p>
             </div>
-            <div class="open-tab"> 
+            <div id="tab-my-linkdin" onclick="openLink('#window-grid-my-linkdin','#tab-my-linkdin');" class="open-tab"> 
                 <a href=""><img src="Images/img-linkdin.png" alt="My Linkdin"></a>
                 <p>My Linkdin</p>
             </div>
         </div>
+
         <div class="time">
             <p>14:55 PM</p>
         </div>
         
     </footer>
+
     <div class="start-menu" onclick="closeScreen();">
         <nav> 
-            <div class="start-menu-item"> 
+            <div class="start-menu-item" onclick="openWind('#window-grid-about-me', '#tab-about-me');"> 
                 <a href="javascript:void(0);"><img src="Images/279.ico" alt="About Me"></a>
                 <p>About Me</p>
             </div>
             <div class="start-menu-item" onclick="openWind('#window-grid-my-projects', '#tab-my-projects');"> 
-                <a href=""><img src="Images/img-project.ico" alt="My Projects"></a>
+                <a hhref="javascript:void(0);"><img src="Images/img-project.ico" alt="My Projects"></a>
                 <p>My Projects</p>
             </div>
-            <div class="start-menu-item"> 
-                <a href=""><img src="Images/img-twitter.png" alt="My Twitter"></a>
+            <div class="start-menu-item" onclick="openLink('#window-grid-my-twitter','#tab-my-twitter');"> 
+                <a href="javascript:void(0);"><img src="Images/img-twitter.png" alt="My Twitter"></a>
                 <p>My Twitter</p>
             </div>
-            <div class="start-menu-item"> 
-                <a href=""><img src="Images/img-github.png" alt="My GitHub"></a>
+            <div class="start-menu-item" onclick="openLink('#window-grid-my-github','#tab-my-github');"> 
+                <a href="javascript:void(0);"><img src="Images/img-github.png" alt="My GitHub"></a>
                 <p>My GitHub</p>
             </div>
-            <div class="start-menu-item"> 
-                <a href=""><img src="Images/img-linkdin.png" alt="My Linkdin"></a>
+            <div class="start-menu-item" onclick="openLink('#window-grid-my-linkdin','#tab-my-linkdin');"> 
+                <a href="javascript:void(0);"><img src="Images/img-linkdin.png" alt="My Linkdin"></a>
                 <p>My Linkdin</p>
             </div>
             <div class="start-menu-item" onclick="logout();"> 
@@ -113,14 +117,32 @@
             </nav>
         </header>
         <main class="window-grid-main">
-            <p>Présentation de ton projet ici</p>
-            <iframe src="main-page.html" 
-            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Présentation de tes projets ici</p>
         </main>
         <footer class="window-grid-footer">
         </footer>
     </div>
 
+    <div id="window-grid-about-me" class="window-grid element-hidden">
+        <header class="window-grid-header">
+            <div class="window-grid-header-logo">
+                <img src="Images/img-project.ico" alt="">
+            </div>
+            <div class="window-grid-header-title">
+                <p>About Me</p>
+            </div>
+            <nav class="window-grid-header-menu">
+                <img src="Images/minimize.png" onclick="minimizeWind('#window-grid-my-projects');" alt="Minimize">
+                <img src="Images/maximize.png" onclick="maximizeWind();" alt="Maximize">
+                <img src="Images/close.png" onclick="closeWind('#window-grid-about-me', '#tab-about-me');" alt="Close">
+            </nav>
+        </header>
+        <main class="window-grid-main">
+            <p>Te présenter ici</p>
+        </main>
+        <footer class="window-grid-footer">
+        </footer>
+    </div>
     <script src="mainpage.js"></script>
 </body>
 </html>

@@ -45,3 +45,20 @@ function openWind(windElement, tabElement) {
         tab.classList.add("active");     
     }
 }
+
+function openLink(windElement, tabElement){
+    let tab = document.querySelector (tabElement);
+    tab.classList.add("active"); 
+    if(tabElement == '#tab-my-twitter'){
+        // ouvrir twitter
+        window.open("https://twitter.com/home");
+
+    }else if(tabElement == '#tab-my-github'){
+        // ouvrir github
+        window.open("https://github.com/Ateioss");
+
+    }else if(tabElement == '#tab-my-linkdin'){
+        // ouvrir linkdin
+        window.open("https://www.linkedin.com/in/mathis-noel-656331233/");
+    }
+}
