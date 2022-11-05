@@ -1,0 +1,276 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-image: url(Images/Windows-xp-wallpaper.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+body .app-content {
+  display: flex;
+  flex-direction: row;
+  height: 95%;
+  padding: 20px;
+}
+body .app-content nav {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 10%;
+  height: 100%;
+}
+body .app-content nav div {
+  margin-top: 10px;
+  text-align: center;
+}
+body .app-content nav div a {
+  display: block;
+}
+body .app-content nav div a img {
+  width: 40px;
+}
+body .app-content nav div p {
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+body footer {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  background-color: #245EDC;
+  background: linear-gradient(to bottom, #245EDC 0%, #3f8cf3 9%, #245EDC 18%, #245EDC 92%, #1941A5 100%) center/cover no-repeat;
+}
+body footer .button-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  gap: 10px;
+  height: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  font-style: italic;
+  background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
+  box-shadow: 0px 5px 10px #79ce71 inset, 4px 0 8px #3f8cf3;
+  padding: 2px 25px 6px 10px;
+  text-shadow: 1px 1px 3px #222;
+  border-radius: 0px 8px 8px 0px;
+  margin-right: 16px;
+}
+body footer .button-start:hover {
+  cursor: pointer;
+}
+body footer .button-start .footer-start {
+  width: 20%;
+  text-align: center;
+}
+body footer .button-start .footer-start img {
+  max-width: 100%;
+}
+body footer .button-start .footer-start-text {
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+body footer .button-start .footer-start-text .start {
+  text-decoration: none;
+  color: white;
+}
+body footer .button-start .footer-start-text .start:hover {
+  cursor: pointer;
+}
+body footer .taskbar {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 2px;
+}
+body footer .taskbar .open-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 150px;
+  height: 30px;
+  background-color: #4892F7;
+  background: url(Images/btn1.png) no-repeat 0 0;
+  border: 1px solid #306FD9;
+  border-radius: 2px;
+  font-family: calibri, monospace;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+body footer .taskbar .open-tab:hover {
+  background: url(Images/btn2.png) no-repeat 0 0;
+}
+body footer .taskbar .open-tab p {
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+body footer .taskbar .open-tab img {
+  width: 20px;
+}
+body footer .taskbar .active {
+  background: url(Images/btn3.png) no-repeat 0 0;
+}
+body footer .time {
+  height: 100%;
+  width: 10%;
+  line-height: 1.5;
+  background: linear-gradient(to bottom, #1290E9 0%, #19B9F3 9%, #1290E9 18%, #1290E9 92%, #1941A5 100%) center/cover no-repeat;
+  box-shadow: 0px 5px 10px #14A5F0 inset, 0px 5px 10px #333333;
+  padding: 9px 15px 9px 25px;
+  border-left: 1px solid #092E51;
+  text-shadow: 1px 1px 2px #222;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+}
+body footer .time p {
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+body .start-menu {
+  position: absolute;
+  background-color: #D2E2F9;
+  padding: 10px;
+  width: 30%;
+  display: none;
+  height: 50%;
+  z-index: 1;
+  text-align: right; /* centrer à droite le button close */
+}
+body .start-menu .start-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid white;
+  padding-left: 10px;
+}
+body .start-menu .start-menu-item:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+body .start-menu .start-menu-item a img {
+  width: 40px;
+}
+body .start-menu-display {
+  display: block;
+  bottom: 5%;
+  left: 0px;
+  animation-name: start-position;
+  animation-duration: 1s;
+}
+@keyframes start-position {
+  0% {
+    left: 0px;
+    bottom: 0%;
+    height: 30%;
+    z-index: -1;
+  }
+  99% {
+    left: 0px;
+    bottom: 5%;
+    height: 50%;
+    z-index: -1;
+  }
+  100% {
+    left: 0px;
+    bottom: 5%;
+    height: 50%;
+    z-index: 1;
+  }
+}
+body .start-menu-hidden {
+  bottom: -300%;
+  left: 0%;
+  animation-name: start-menu-hidden;
+  animation-duration: 4s;
+}
+@keyframes start-menu-hidden {
+  0% {
+    left: 0px;
+    bottom: 5%;
+    height: 100%;
+    display: block;
+  }
+  100% {
+    left: 0px;
+    bottom: -300%;
+    height: 30%;
+    display: none;
+  }
+}
+body .window-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  border: 2px solid #245EDC;
+}
+body .window-grid .window-grid-header {
+  grid-area: 1/1/1/5;
+  background-color: #245EDC;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+body .window-grid .window-grid-header .window-grid-header-logo {
+  width: 5%;
+}
+body .window-grid .window-grid-header .window-grid-header-logo img {
+  width: 35px;
+  border-radius: 7px;
+}
+body .window-grid .window-grid-header .window-grid-header-title {
+  width: 75%;
+}
+body .window-grid .window-grid-header .window-grid-header-title p {
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+body .window-grid .window-grid-header .window-grid-header-menu {
+  width: 20%;
+  text-align: right;
+}
+body .window-grid .window-grid-header .window-grid-header-menu img {
+  width: 35px;
+  border-radius: 7px;
+}
+body .window-grid .window-grid-main {
+  grid-area: 2/1/3/5;
+  background-color: #ECE9D8;
+  padding: 10px;
+}
+body .window-grid .window-grid-footer {
+  grid-area: 3/1/4/5;
+  background-color: #245EDC;
+  padding: 10px;
+}
+body .element-hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=Portfolio_Main_Page_CSS.css.map */
