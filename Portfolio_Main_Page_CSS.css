@@ -51,6 +51,7 @@ body footer .button-start {
   flex-direction: row;
   align-items: center;
   width: 10%;
+  width: 170px;
   gap: 10px;
   height: 100%;
   font-size: 20px;
@@ -68,11 +69,11 @@ body footer .button-start:hover {
   cursor: pointer;
 }
 body footer .button-start .footer-start {
-  width: 20%;
+  width: 30px;
   text-align: center;
 }
 body footer .button-start .footer-start img {
-  max-width: 100%;
+  max-width: 30px;
 }
 body footer .button-start .footer-start-text {
   width: 80%;
@@ -88,7 +89,7 @@ body footer .button-start .footer-start-text .start:hover {
 }
 body footer .taskbar {
   display: flex;
-  width: 80%;
+  width: 85%;
   align-items: center;
   gap: 2px;
 }
@@ -130,6 +131,7 @@ body footer .taskbar .active {
 body footer .time {
   height: 100%;
   width: 10%;
+  width: 170px;
   line-height: 1.5;
   background: linear-gradient(to bottom, #1290E9 0%, #19B9F3 9%, #1290E9 18%, #1290E9 92%, #1941A5 100%) center/cover no-repeat;
   box-shadow: 0px 5px 10px #14A5F0 inset, 0px 5px 10px #333333;
@@ -293,6 +295,7 @@ body .window-grid .window-grid-main .projet-1-pres-title {
 body .window-grid .window-grid-main .projet-1-pres-title p {
   font-family: Trebuchet MS, Tahoma, sans-serif;
   font-weight: bold;
+  color: black;
 }
 body .window-grid .window-grid-main .projet-1-pres-image {
   grid-area: 3/1/4/3;
@@ -313,6 +316,27 @@ body .window-grid .window-grid-main .projet-1-pres-text .technologies {
   justify-content: center;
   align-items: center;
 }
+body .window-grid .window-grid-main .projet-1-pres-text .technologies .scss {
+  width: 40px;
+}
+body .window-grid .window-grid-main .projet-1-pres-text .technologies .html {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-1-pres-text .technologies .css {
+  width: 90px;
+}
+body .window-grid .window-grid-main .projet-1-pres-text .technologies .js {
+  width: 37px;
+}
+body .window-grid .window-grid-main .projet-1-pres-text .technologies .sql {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-1-pres-text .technologies .php {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-1-pres-text .soft-skills-fonction {
+  padding-left: 40px;
+}
 body .window-grid .window-grid-main .projet-2-pres-title {
   grid-area: 4/1/5/6;
   padding: 5px;
@@ -322,6 +346,7 @@ body .window-grid .window-grid-main .projet-2-pres-title {
 body .window-grid .window-grid-main .projet-2-pres-title p {
   font-family: Trebuchet MS, Tahoma, sans-serif;
   font-weight: bold;
+  color: black;
 }
 body .window-grid .window-grid-main .projet-2-pres-text {
   grid-area: 5/1/6/4;
@@ -335,10 +360,67 @@ body .window-grid .window-grid-main .projet-2-pres-text .technologies {
   justify-content: center;
   align-items: center;
 }
+body .window-grid .window-grid-main .projet-2-pres-text .technologies .scss {
+  width: 40px;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .technologies .html {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .technologies .css {
+  width: 90px;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .technologies .js {
+  width: 37px;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .technologies .sql {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .technologies .php {
+  width: 50px;
+}
 body .window-grid .window-grid-main .projet-2-pres-text .technologies-2 {
   width: 50%;
   gap: 10px;
   margin: auto;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .evaluation {
+  background-color: rgb(213, 218, 223);
+}
+body .window-grid .window-grid-main .projet-2-pres-text .evaluation .evaluation-niveau-html {
+  width: 60%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .evaluation .evaluation-niveau-css {
+  width: 60%;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .evaluation .evaluation-niveau-js {
+  width: 30%;
+  background-color: rgb(225, 116, 194);
+  color: white;
+  text-align: center;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .evaluation .evaluation-niveau-scss {
+  width: 50%;
+  background-color: orange;
+  color: white;
+  text-align: center;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .evaluation .evaluation-niveau-php {
+  width: 10%;
+  background-color: rgb(55, 211, 183);
+  color: white;
+  text-align: center;
+}
+body .window-grid .window-grid-main .projet-2-pres-text .evaluation .evaluation-niveau-sql {
+  width: 30%;
+  background-color: rgb(82, 161, 229);
+  color: white;
+  text-align: center;
 }
 body .window-grid .window-grid-main .projet-2-pres-image {
   grid-area: 5/4/6/6;
@@ -357,6 +439,24 @@ body .window-grid .window-grid-main .projet-2-pres-image-2 {
 body .window-grid .window-grid-main .projet-2-pres-image-2 img {
   width: 100%;
 }
+body .window-grid .window-grid-main .projet-2-pres-image-2 .scss {
+  width: 40px;
+}
+body .window-grid .window-grid-main .projet-2-pres-image-2 .html {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-2-pres-image-2 .css {
+  width: 90px;
+}
+body .window-grid .window-grid-main .projet-2-pres-image-2 .js {
+  width: 37px;
+}
+body .window-grid .window-grid-main .projet-2-pres-image-2 .sql {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-2-pres-image-2 .php {
+  width: 50px;
+}
 body .window-grid .window-grid-main .projet-3-pres-title {
   grid-area: 6/1/7/6;
   padding: 5px;
@@ -366,6 +466,7 @@ body .window-grid .window-grid-main .projet-3-pres-title {
 body .window-grid .window-grid-main .projet-3-pres-title p {
   font-family: Trebuchet MS, Tahoma, sans-serif;
   font-weight: bold;
+  color: black;
 }
 body .window-grid .window-grid-main .projet-3-pres-image {
   grid-area: 7/1/8/3;
@@ -386,6 +487,24 @@ body .window-grid .window-grid-main .projet-3-pres-text .technologies {
   justify-content: center;
   align-items: center;
 }
+body .window-grid .window-grid-main .projet-3-pres-text .technologies .scss {
+  width: 40px;
+}
+body .window-grid .window-grid-main .projet-3-pres-text .technologies .html {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-3-pres-text .technologies .css {
+  width: 90px;
+}
+body .window-grid .window-grid-main .projet-3-pres-text .technologies .js {
+  width: 37px;
+}
+body .window-grid .window-grid-main .projet-3-pres-text .technologies .sql {
+  width: 50px;
+}
+body .window-grid .window-grid-main .projet-3-pres-text .technologies .php {
+  width: 50px;
+}
 body .window-grid .window-grid-footer {
   grid-area: 3/1/4/5;
   background-color: #245EDC;
@@ -393,6 +512,23 @@ body .window-grid .window-grid-footer {
 }
 body .element-hidden {
   display: none;
+}
+
+@media screen and (max-width: 590px) {
+  body .app-content nav {
+    width: 40%;
+  }
+  body footer .taskbar .open-tab {
+    display: none;
+  }
+  body .start-menu {
+    width: 70%;
+  }
+  body .window-grid {
+    width: 98%;
+    left: 1%;
+    top: 10%;
+  }
 }
 
 /*# sourceMappingURL=Portfolio_Main_Page_CSS.css.map */

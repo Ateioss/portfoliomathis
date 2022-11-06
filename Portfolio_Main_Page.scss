@@ -4,6 +4,40 @@
     padding: 0%;
 }
 
+@mixin add-technologies {
+    .scss{
+        width:40px;
+    }
+    .html{
+        width:50px;
+    }
+    .css{
+        width:90px;
+    }
+    .js{
+        width:37px;
+    }
+    .sql{
+        width:50px;
+    }
+    .php{
+        width:50px;
+    }
+}
+
+@mixin add-font-trebuchet ($weight, $color:black) {
+    font-family: Trebuchet MS , Tahoma, sans-serif;
+    font-weight:$weight; 
+    color:$color;
+}
+
+@mixin evaluation-niveau($bgcolor, $color, $position, $width) {
+    width:$width;
+    background-color:$bgcolor;
+    color:$color;
+    text-align: $position;
+}
+
 body{
     background-image: url(Images/Windows-xp-wallpaper.jpg);
     background-size: cover;
@@ -31,9 +65,7 @@ body{
                 width:40px;
             }
             div p{
-                font-family: Trebuchet MS , Tahoma, sans-serif;
-                font-weight:bold; 
-                color:white;
+                @include add-font-trebuchet(bold, white);
             }
         } 
     }
@@ -49,8 +81,8 @@ body{
             flex-direction: row;
             align-items: center;
             width: 10%;
+            width: 170px;
             gap:10px;
-
             height: 100%;
             font-size: 20px;
             line-height: 20px;
@@ -67,10 +99,10 @@ body{
                 cursor: pointer; 
             }
             .footer-start{
-                width: 20%;
+                width: 30px;
                 text-align: center;
                 img{
-                    max-width:100%;
+                    max-width: 30px;
                 }
             }
             .footer-start-text{
@@ -88,7 +120,7 @@ body{
         }
         .taskbar{
             display: flex;
-            width:80%;
+            width:85%;
             align-items:center;
             gap:2px;
             .open-tab {
@@ -115,9 +147,7 @@ body{
                     background: url(Images/btn2.png) no-repeat 0 0;
                 }  
                 p{
-                    font-family: Trebuchet MS , Tahoma, sans-serif;
-                    font-weight:bold; 
-                    color:white;
+                    @include add-font-trebuchet(bold, white);
                 }   
                 img{
                     width:20px;
@@ -130,6 +160,7 @@ body{
         .time {
             height: 100%;
             width:10%;
+            width: 170px;
             line-height: 1.5;
             background: linear-gradient(to bottom, #1290E9 0%, #19B9F3 9%, #1290E9 18%, #1290E9 92%, #1941A5 100%) center/cover no-repeat;
             box-shadow: 0px 5px 10px #14A5F0 inset, 0px 5px 10px #333333;
@@ -140,9 +171,7 @@ body{
             text-transform: uppercase;
             text-align: center;
             p{
-                font-family: Trebuchet MS , Tahoma, sans-serif;
-                font-weight:bold; 
-                color:white;
+                @include add-font-trebuchet(bold, white);
             }
         }
     }
@@ -224,9 +253,7 @@ body{
             .window-grid-header-title{
                 width: 75%;
                 p{
-                    font-family: Trebuchet MS , Tahoma, sans-serif;
-                    font-weight:bold; 
-                    color:white;
+                    @include add-font-trebuchet(bold, white);
                 }
             }
             .window-grid-header-menu{
@@ -268,8 +295,7 @@ body{
                 padding:5px;
                 border-bottom: 1px white solid;
                 p{
-                    font-family: Trebuchet MS , Tahoma, sans-serif;
-                    font-weight:bold;
+                    @include add-font-trebuchet(bold);
                 }
             }
             .projet-1-pres-image{
@@ -289,6 +315,10 @@ body{
                     gap: 10px;
                     justify-content: center;
                     align-items: center;
+                    @include add-technologies;
+                }
+                .soft-skills-fonction{
+                    padding-left: 40px;
                 }
             }
 
@@ -298,8 +328,7 @@ body{
                 border-bottom: 1px white solid;
                 /*border-top: 1px white solid;*/
                 p{
-                    font-family: Trebuchet MS , Tahoma, sans-serif;
-                    font-weight:bold;
+                    @include add-font-trebuchet(bold);
                 }
             }
             .projet-2-pres-text{
@@ -312,11 +341,33 @@ body{
                     gap: 10px;
                     justify-content: center;
                     align-items: center;
+                    @include add-technologies;
                 }
                 .technologies-2{
                     width: 50%;
                     gap: 10px;
                     margin:auto;
+                }
+                .evaluation{
+                    background-color:rgb(213, 218, 223);
+                    .evaluation-niveau-html{
+                        @include evaluation-niveau(red,white,center, 60%);
+                    }
+                    .evaluation-niveau-css{
+                        @include evaluation-niveau(green,white,center, 60%);
+                    }
+                    .evaluation-niveau-js{
+                        @include evaluation-niveau(rgb(225, 116, 194),white,center, 30%);
+                    }
+                    .evaluation-niveau-scss{
+                        @include evaluation-niveau(orange,white,center, 50%);
+                    }
+                    .evaluation-niveau-php{
+                        @include evaluation-niveau(rgb(55, 211, 183),white,center, 10%);
+                    }
+                    .evaluation-niveau-sql{
+                        @include evaluation-niveau(rgb(82, 161, 229),white,center, 30%);
+                    }
                 }
             }
             .projet-2-pres-image{
@@ -336,6 +387,7 @@ body{
                 img{
                     width: 100%;
                 }
+                @include add-technologies;
             }
             
             .projet-3-pres-title{
@@ -344,8 +396,7 @@ body{
                 border-bottom: 1px white solid;
                 /*border-top: 1px white solid;*/
                 p{
-                    font-family: Trebuchet MS , Tahoma, sans-serif;
-                    font-weight:bold;
+                    @include add-font-trebuchet(bold);
                 }
             }
             .projet-3-pres-image{
@@ -365,6 +416,7 @@ body{
                     gap: 10px;
                     justify-content: center;
                     align-items: center;
+                    @include add-technologies;
                 }
             }
             
@@ -378,4 +430,28 @@ body{
     .element-hidden{
         display: none;
     } 
+}
+@media screen and (max-width: 590px){
+    body{
+        .app-content{
+            nav{
+                width:40%;
+            }
+        }
+        footer{
+            .taskbar{
+                .open-tab{
+                    display: none;
+                }
+            }
+        }
+        .start-menu{
+            width : 70%;
+        }
+        .window-grid{
+            width: 98%;
+            left: 1%;
+            top: 10%;
+        }
+    }
 }
