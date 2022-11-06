@@ -20,14 +20,6 @@ function logout() {
     window.close(``, `_parent`, ``);
 }
 
-function minimizeWind() {
-    
-}
-
-function maximizeWind() {
-    
-}
-
 function closeWind(classElement,tabElement) {
     let wind = document.querySelector (classElement);
     let tab = document.querySelector (tabElement);
@@ -48,17 +40,33 @@ function openWind(windElement, tabElement) {
 
 function openLink(windElement, tabElement){
     let tab = document.querySelector (tabElement);
-    tab.classList.add("active"); 
     if(tabElement == '#tab-my-twitter'){
         // ouvrir twitter
-        window.open("https://twitter.com/home");
-
+        if(!tab.classList.contains("active")){
+            window.open("https://twitter.com/home");
+            tab.classList.add("active"); 
+        }else{
+            tab.classList.remove("active"); 
+        }
     }else if(tabElement == '#tab-my-github'){
         // ouvrir github
-        window.open("https://github.com/Ateioss");
-
+        if(!tab.classList.contains("active")){
+            window.open("https://github.com/Ateioss");
+            tab.classList.add("active"); 
+        }else{
+            tab.classList.remove("active"); 
+        }
     }else if(tabElement == '#tab-my-linkdin'){
         // ouvrir linkdin
-        window.open("https://www.linkedin.com/in/mathis-noel-656331233/");
+        if(!tab.classList.contains("active")){
+            window.open("https://www.linkedin.com/in/mathis-noel-656331233/");
+            tab.classList.add("active"); 
+        }else{
+            tab.classList.remove("active"); 
+        }
     }
+}
+
+function ontest(){
+    alert("fin");
 }
