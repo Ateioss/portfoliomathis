@@ -116,14 +116,14 @@
                 <img src="Images/close.png" onclick="closeWind('#window-grid-my-projects', '#tab-my-projects');" alt="Close">
             </nav>
         </header>
-        <main class="window-grid-main window-grid-main-my-projects">
+        <main class="window-grid-main">
             <nav class="menu">
-                <a href="">Portfolio</a>
-                <a href="">First GitHub</a>
-                <a href="">Palais de Tokyo website</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#github">First GitHub</a>
+                <a href="#tokyo">Palais de Tokyo website</a>
             </nav>
 
-            <div class="projet-1-pres-title">
+            <div id="portfolio" class="projet-1-pres-title">
                 <p>Portfolio</p>
             </div>
             <div class="projet-1-pres-image">
@@ -136,7 +136,7 @@
                 <div style="padding-left: 40px;">
                     <ul>
                         <li>
-                            my  previous projects
+                            my previous projects
                         </li>
                         <li>
                             my soft-skills
@@ -147,85 +147,80 @@
                     </ul>
                 </div>
                 <br>
-                <p>Mains technologies Used :</p>
                 <div class="technologies">
-                    <img  style="width: 40px;" src="Images/scss.png" alt="">
                     <img  style="width: 50px;"  src="Images/html.ico" alt="">
                     <img  style="width: 90px;" src="Images/CSS.png" alt="">
-                    <img  style="width: 37px;" src="Images/js.png" alt="">  
+                    <img  style="width: 37px;" src="Images/js.png" alt="">
+                    <!--<img  style="width: 40px;" src="Images/scss.png" alt="">-->
                 </div>
             </div>
 
-            <div class="projet-2-pres-title">
+            <div  id="github" class="projet-2-pres-title">
                 <p>First GitHub</p>
             </div>
             <div class="projet-2-pres-image">
-                <img src="Images/portfolio_project.png" alt="">
+                <img src="Images/github_1st_project.png" alt="">
             </div>
             <div class="projet-2-pres-text">
-                <p>This is my main project (at least at the moment).
-                    It's a windows-xp inspired portfolio who present:
+                <p>My first real GitHub project who present the members of my team : 
                 </p> 
                 <div style="padding-left: 40px;">
                     <ul>
                         <li>
-                            my  previous projects
+                            Ryan
                         </li>
                         <li>
-                            my soft-skills
+                            Alban
                         </li>
                         <li>
-                            myself
+                            Gabriel
                         </li>
                     </ul>
                 </div>
                 <br>
-                <p>Mains technologies Used :</p>
-                <div class="technologies">
-                    <img  style="width: 40px;" src="Images/scss.png" alt="">
-                    <img  style="width: 50px;"  src="Images/html.ico" alt="">
-                    <img  style="width: 90px;" src="Images/CSS.png" alt="">
-                    <img  style="width: 37px;" src="Images/js.png" alt="">  
+                <div class="technologies technologies-2">
+                    <img style="width: 50px;"  src="Images/html.ico" alt="">
+                    <img style="width: 90px;" src="Images/CSS.png" alt="">
+                    <img style="width: 37px;" src="Images/js.png" alt="">  
                 </div>
             </div>
 
-            <div class="projet-3-pres-title">
+            <div id="tokyo" class="projet-3-pres-title">
                 <p>Palais de Tokyo website</p>
             </div>
+            <div class="projet-3-pres-image">
+                <img src="Images/Palais_de_tokyo.png" alt="">
+            </div>
             <div class="projet-3-pres-text">
-                <p>This is my main project (at least at the moment).
-                    It's a windows-xp inspired portfolio who present:
+                <p>A website who present the Palais de Tokyo, a modern art museum in Paris:
                 </p> 
                 <div style="padding-left: 40px;">
                     <ul>
                         <li>
-                            my  previous projects
+                            his story
                         </li>
                         <li>
-                            my soft-skills
+                            his expositions
                         </li>
                         <li>
-                            myself
+                            his location and networks
                         </li>
                     </ul>
                 </div>
                 <br>
-                <p>Mains technologies Used :</p>
                 <div class="technologies">
-                    <img  style="width: 40px;" src="Images/scss.png" alt="">
-                    <img  style="width: 50px;"  src="Images/html.ico" alt="">
-                    <img  style="width: 90px;" src="Images/CSS.png" alt="">
-                    <img  style="width: 37px;" src="Images/js.png" alt="">  
+                    <img style="width: 50px;"  src="Images/html.ico" alt="">
+                    <img style="width: 90px;" src="Images/CSS.png" alt="">
+                    <img style="width: 37px;" src="Images/js.png" alt="">
+                    <!--<img style="width: 40px;" src="Images/scss.png" alt="">--> 
                 </div>
             </div>
-            <div class="projet-3-pres-image">
-                <img src="Images/portfolio_project.png" alt="">
-            </div>
+        
         </main>
         <footer class="window-grid-footer">
         </footer>
     </div>
-
+      <!--about-me window -->
     <div id="window-grid-about-me" class="window-grid element-hidden">
         <header class="window-grid-header">
             <div class="window-grid-header-logo">
@@ -241,7 +236,122 @@
             </nav>
         </header>
         <main class="window-grid-main">
-            <p>Te présenter ici</p>
+            <nav class="menu">
+                <a href="#myself">Myself</a>
+                <a href="#skills">My Skills</a>
+                <a href="#hobbies">My Hobbies</a>
+            </nav>
+
+            <div id="myself" class="projet-1-pres-title">
+                <p>Myself</p>
+            </div>
+            <div class="projet-1-pres-image">
+                <img src="Images/mathis.jpg" alt="">
+            </div>
+            <div class="projet-1-pres-text">
+                <p>Hello 🙌🏽 my name's Mathis ! I'm 20 and I study at IIM in paris in the coding and digital innovation Branch ! 
+                    I like front as much as back (yeah that's true i swear 🤓)! Also i really enjoy my studies... 
+                </p> 
+                <p>
+                    If i should define myself i would say that i am :
+                </p>
+                <div style="padding-left: 40px;">
+                    <ul>
+                        <li>
+                            Passionate
+                        </li>
+                        <li>
+                            Amenable
+                        </li>
+                        <li>
+                            Ambitious
+                        </li>
+                    </ul>
+                </div>
+                <div style="text-align:center;">
+                    <img src="Images/mathis.jpg" style="width:200px;border-radius:50%;border:2px white solid;" alt="">
+                </div>
+            </div>
+
+            <div  id="skills" class="projet-2-pres-title">
+                <p>My Skills (Technologies)</p>
+            </div>
+            <div class="projet-2-pres-image projet-2-pres-image-2">
+                <div>
+                    <img style="width:40px;" src="Images/scss.png" alt="">
+                </div>
+                <div>
+                    <img style="width:50px;" src="Images/html.ico" alt="">
+                    <img style="width:90px;" src="Images/CSS.png" alt="">
+                    <img style="width:37px;" src="Images/js.png" alt="">
+                </div>
+                <div>
+                    <img style="width:50px;" src="Images/sql.png" alt="">
+                </div>
+                <div>
+                    <img style="width:50px;" src="Images/php.png" alt="">
+                </div>
+            </div>
+            <div class="projet-2-pres-text">
+                <div style="background-color:rgb(213, 218, 223);">
+                    <div style="width:60%;background-color:red;color:white;text-align: center;">
+                        html
+                    </div>
+                </div>
+                <br>
+                <div style="background-color:rgb(213, 218, 223);">
+                    <div style="width:60%;background-color:green;color:white;text-align: center;">
+                        css
+                    </div>
+                </div>
+                <br>
+                <div style="background-color:rgb(213, 218, 223);">
+                    <div style="width:30%;background-color:rgb(225, 116, 194);color:white;text-align: center;">
+                        javascript
+                    </div>
+                </div>
+                <br>
+                <div style="background-color:rgb(213, 218, 223);">
+                    <div style="width:50%;background-color:orange;color:white;text-align: center;">
+                        scss/sass
+                    </div>
+                </div>
+                <br>
+                <div style="background-color:rgb(213, 218, 223);">
+                    <div style="width:10%;background-color:rgb(55, 211, 183);color:white;text-align: center;">
+                        php
+                    </div>
+                </div>
+                <br>
+                <div style="background-color:rgb(213, 218, 223);">
+                    <div style="width:30%;background-color:rgb(82, 161, 229);color:white;text-align: center;">
+                        sql
+                    </div>
+                </div>   
+            </div>
+            <!-- My hobbies -->
+            <div id="hobbies" class="projet-3-pres-title">
+                <p>My Hobbies</p>
+            </div>
+            <div class="projet-3-pres-image">
+                <img src="Images/minecraft.jpg" alt="">
+            </div>
+            <div class="projet-3-pres-text">
+                <div style="padding-left: 40px;">
+                    <ul>
+                        <li>
+                            Art / Mode : Jacquemus
+                        </li>
+                        <li>
+                            Lecture : Bel-ami | histoire de l'art
+                        </li>
+                        <li>
+                            Vidéo games : Minecraft | Pokemon
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
         </main>
         <footer class="window-grid-footer">
         </footer>

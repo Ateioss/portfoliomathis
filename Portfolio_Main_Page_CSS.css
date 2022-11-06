@@ -262,16 +262,13 @@ body .window-grid .window-grid-header .window-grid-header-menu img {
 body .window-grid .window-grid-main {
   grid-area: 2/1/3/5;
   background-color: #ECE9D8;
-  padding: 10px;
-}
-body .window-grid .window-grid-main-my-projects {
   display: grid;
   padding: 0px;
   grid-template-columns: repeat(5, 1fr);
   height: 55vh;
   overflow: scroll;
 }
-body .window-grid .window-grid-main-my-projects .menu {
+body .window-grid .window-grid-main .menu {
   grid-area: 1/1/2/6;
   padding: 5px;
   background-color: rgb(213, 218, 223);
@@ -279,74 +276,110 @@ body .window-grid .window-grid-main-my-projects .menu {
   position: sticky;
   top: 0;
 }
-body .window-grid .window-grid-main-my-projects .projet-1-pres-title {
+body .window-grid .window-grid-main .menu a {
+  text-decoration: none;
+  margin-left: 5px;
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+}
+body .window-grid .window-grid-main .menu a:hover {
+  color: white;
+}
+body .window-grid .window-grid-main .projet-1-pres-title {
   grid-area: 2/1/3/6;
   padding: 5px;
   border-bottom: 1px white solid;
 }
-body .window-grid .window-grid-main-my-projects .projet-1-pres-image {
+body .window-grid .window-grid-main .projet-1-pres-title p {
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+}
+body .window-grid .window-grid-main .projet-1-pres-image {
   grid-area: 3/1/4/3;
   padding: 5px;
-  border-right: 1px white solid;
+  /*border-right: 1px white solid;*/
 }
-body .window-grid .window-grid-main-my-projects .projet-1-pres-image img {
+body .window-grid .window-grid-main .projet-1-pres-image img {
   width: 100%;
 }
-body .window-grid .window-grid-main-my-projects .projet-1-pres-text {
+body .window-grid .window-grid-main .projet-1-pres-text {
   grid-area: 3/3/4/6;
   padding: 5px;
 }
-body .window-grid .window-grid-main-my-projects .projet-1-pres-text .technologies {
+body .window-grid .window-grid-main .projet-1-pres-text .technologies {
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
-body .window-grid .window-grid-main-my-projects .projet-2-pres-title {
+body .window-grid .window-grid-main .projet-2-pres-title {
   grid-area: 4/1/5/6;
   padding: 5px;
   border-bottom: 1px white solid;
-  border-top: 1px white solid;
+  /*border-top: 1px white solid;*/
 }
-body .window-grid .window-grid-main-my-projects .projet-2-pres-text {
+body .window-grid .window-grid-main .projet-2-pres-title p {
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+}
+body .window-grid .window-grid-main .projet-2-pres-text {
   grid-area: 5/1/6/4;
   padding: 5px;
-  border-right: 1px white solid;
+  /*border-right: 1px white solid;*/
 }
-body .window-grid .window-grid-main-my-projects .projet-2-pres-text .technologies {
+body .window-grid .window-grid-main .projet-2-pres-text .technologies {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
-body .window-grid .window-grid-main-my-projects .projet-2-pres-image {
+body .window-grid .window-grid-main .projet-2-pres-text .technologies-2 {
+  width: 50%;
+  gap: 10px;
+  margin: auto;
+}
+body .window-grid .window-grid-main .projet-2-pres-image {
   grid-area: 5/4/6/6;
   padding: 5px;
 }
-body .window-grid .window-grid-main-my-projects .projet-2-pres-image img {
+body .window-grid .window-grid-main .projet-2-pres-image img {
   width: 100%;
 }
-body .window-grid .window-grid-main-my-projects .projet-3-pres-title {
+body .window-grid .window-grid-main .projet-2-pres-image-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body .window-grid .window-grid-main .projet-2-pres-image-2 img {
+  width: 100%;
+}
+body .window-grid .window-grid-main .projet-3-pres-title {
   grid-area: 6/1/7/6;
   padding: 5px;
   border-bottom: 1px white solid;
-  border-top: 1px white solid;
+  /*border-top: 1px white solid;*/
 }
-body .window-grid .window-grid-main-my-projects .projet-3-pres-image {
+body .window-grid .window-grid-main .projet-3-pres-title p {
+  font-family: Trebuchet MS, Tahoma, sans-serif;
+  font-weight: bold;
+}
+body .window-grid .window-grid-main .projet-3-pres-image {
   grid-area: 7/1/8/3;
   padding: 5px;
-  border-right: 1px white solid;
+  /*border-right: 1px white solid;*/
 }
-body .window-grid .window-grid-main-my-projects .projet-3-pres-image img {
+body .window-grid .window-grid-main .projet-3-pres-image img {
   width: 100%;
 }
-body .window-grid .window-grid-main-my-projects .projet-3-pres-text {
+body .window-grid .window-grid-main .projet-3-pres-text {
   grid-area: 7/3/8/6;
   padding: 5px;
 }
-body .window-grid .window-grid-main-my-projects .projet-3-pres-text .technologies {
+body .window-grid .window-grid-main .projet-3-pres-text .technologies {
   display: flex;
   flex-direction: row;
   gap: 10px;
